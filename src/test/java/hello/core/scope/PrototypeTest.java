@@ -1,6 +1,7 @@
 package hello.core.scope;
 
 import org.assertj.core.api.Assertions;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.annotation.Scope;
@@ -11,6 +12,7 @@ import javax.annotation.PreDestroy;
 public class PrototypeTest {
 
     @Test
+    @DisplayName("한글로 이것이 테스트")
     void prototypeBeanFind() {
 
         AnnotationConfigApplicationContext ac = new AnnotationConfigApplicationContext(PrototypeBean.class);

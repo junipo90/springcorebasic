@@ -20,7 +20,7 @@ public class SingletonWithPrototypeTest {
         prototypeBean1.addCount();
         Assertions.assertThat(prototypeBean1.getCount()).isEqualTo(1);
 
-        PrototypeBean prototypeBean2 = ac.getBean(PrototypeBean.class);
+        PrototypeBean prototypeBean2 = ac.getBean(PrototypeBean.class); 
         prototypeBean2.addCount();
         Assertions.assertThat(prototypeBean2.getCount()).isEqualTo(1);
     }
